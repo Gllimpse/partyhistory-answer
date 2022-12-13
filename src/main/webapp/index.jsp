@@ -2,20 +2,11 @@
 <html>
 <head>
     <meta charset=UTF-8"/>
-    <title>两数相加</title>
+    <title>党史答题大比拼</title>
 </head>
 <body>
-<%
-    session.setAttribute("user","Glimpse");
-%>
-<form action="addServlet.jsp" method="post">
-    <input type="text" name="num1"/>
-    <br>
-    <br>
-    <input type="text" name="num2"/>
-    <br>
-    <br>
-    <input type="submit" value="Add"/>
+<form action="home.jsp" method="post">
+    <input type="submit" value="登录"/>
 </form>
 </body>
 </html>

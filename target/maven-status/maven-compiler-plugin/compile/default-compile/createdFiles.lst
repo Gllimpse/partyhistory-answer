@@ -1,1 +1,2 @@
-InputServlet.class
+controller\AnswerServlet.class
+controller\StartServlet.class

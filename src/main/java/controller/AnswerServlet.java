@@ -1,3 +1,5 @@
+package controller;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -6,9 +8,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/InputServlet")
-public class InputServlet extends HttpServlet {
-    public InputServlet() {
+/**
+ * @author Glimpse
+ * @date 2022/12/13 10:40
+ * 提交答题结果
+ */
+@WebServlet("/AnswerServlet")
+public class AnswerServlet extends HttpServlet {
+    public AnswerServlet() {
         super();
     }
 
@@ -19,7 +26,6 @@ public class InputServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/addServlet.jsp");
-        dispatcher.forward(req,resp);
+
     }
 }
