@@ -26,6 +26,6 @@ public class AnswerServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        System.out.println(req.getParameter("q1"));
     }
 }

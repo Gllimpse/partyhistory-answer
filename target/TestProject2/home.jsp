@@ -50,10 +50,15 @@
         }
 
         .input-item {
-            text-align: center;
+            /*text-align: center;*/
             display: block;
-            width: 100%;
-            margin-bottom: 20px;
+            width: 320px;
+            height: 40px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -160px;
+            margin-top: -30px;
             padding: 10px;
             /*隐藏边框*/
             border: 0;
@@ -81,6 +86,7 @@
             background-image: linear-gradient(to right, #a6c1ee, #fbc2eb);
             color: #fff;
             font-family: "Comic Sans MS", serif;
+            font-size: 20px;
             border-radius:30px;
         }
 
