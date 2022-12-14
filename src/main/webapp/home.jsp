@@ -5,6 +5,12 @@
   Time: 8:07
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
+<%
+    String btnName = "Start Answer Questions!";
+//    if (request.getParameter("isTodayAnswered").equals("true")){
+//        btnName = "Check Your Rank!";
+//    }
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,7 +109,7 @@
         <input type="text" value="今日还未答题，赶快开始答题吧" class="input-item" readonly=readonly >
 
         <form action="StartServlet" method="post">
-            <input type="submit" value="Start" class="btn">
+            <input type="submit" value="<%=btnName%>" class="btn">
         </form>
     </div>
 

@@ -1,6 +1,9 @@
 package controller;
 
-import javax.servlet.RequestDispatcher;
+import entity.User;
+import factory.ServiceFactory;
+import service.UserService;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,6 +29,17 @@ public class AnswerServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println(req.getParameter("q1"));
+        int totalScore = 0;
+        for (int i = 1;i<=10;i++){
+            String answerName = "q"+i;
+            String correctName = answerName+"_answer";
+            String answer = req.getParameter(answerName);
+            String correct = req.getParameter(correctName);
+            if (answer.equals(correct)){
+                totalScore++;
+            }
+        }
+        UserService userService = ServiceFactory.getUserService();
+        userService.submitScore((User)req.getSession().getAttribute("user"),totalScore);
     }
 }

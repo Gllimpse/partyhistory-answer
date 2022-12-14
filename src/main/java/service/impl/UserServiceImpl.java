@@ -13,4 +13,9 @@ public class UserServiceImpl implements UserService {
     public boolean isTodayAnswered(User user) {
         return false;
     }
+
+    @Override
+    public void submitScore(User user, int totalScore) {
+
+    }
 }

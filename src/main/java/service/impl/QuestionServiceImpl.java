@@ -10,9 +10,4 @@ public class QuestionServiceImpl implements QuestionService {
     public List<Question> getQuestions() {
         return null;
     }
-
-    @Override
-    public void submitAnswers(List<String> answers) {
-
-    }
 }
