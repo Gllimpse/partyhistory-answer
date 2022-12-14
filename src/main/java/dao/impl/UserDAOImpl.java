@@ -1,20 +1,21 @@
-package daoimp;
+package dao.impl;
 
 import dao.UserDAO;
-import model.User;
+import entity.User;
+import util.DBHelper;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 
-public class UserDAOImp implements UserDAO {
+public class UserDAOImpl implements UserDAO {
 
     @Override
     public void save(User user) {
         String sql = "insert into user (account,password) values (?,?)";
         try {
-            PreparedStatement ps = DBConnect.conn.prepareStatement(sql);
+            PreparedStatement ps = DBHelper.getConn().prepareStatement(sql);
             ps.setString(1, user.account);
             ps.setString(2, user.password);
             ps.executeUpdate();
@@ -27,7 +28,7 @@ public class UserDAOImp implements UserDAO {
     public void update(User user) {
         String sql = "update user set account=?,password=? where id=?";
         try {
-            PreparedStatement ps = DBConnect.conn.prepareStatement(sql);
+            PreparedStatement ps = DBHelper.getConn().prepareStatement(sql);
             ps.setString(1, user.account);
             ps.setString(2, user.password);
             ps.setInt(3, user.id);
@@ -41,7 +42,7 @@ public class UserDAOImp implements UserDAO {
     public void delete(User user) {
         String sql = "delete from user where account=?";
         try {
-            PreparedStatement ps = DBConnect.conn.prepareStatement(sql);
+            PreparedStatement ps = DBHelper.getConn().prepareStatement(sql);
             ps.setString(1, user.account);
             ps.executeUpdate();
         } catch (SQLException e) {
@@ -55,7 +56,7 @@ public class UserDAOImp implements UserDAO {
         PreparedStatement ps = null;
         User user = null;
         try {
-            ps = DBConnect.conn.prepareStatement(sql);
+            ps = DBHelper.getConn().prepareStatement(sql);
             ps.setString(1,account);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {

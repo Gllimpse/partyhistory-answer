@@ -1,19 +1,21 @@
-package daoimp;
+package dao.impl;
 
 import dao.ScoreDAO;
-import model.Score;
+import entity.Score;
+import util.DBHelper;
+
 import java.sql.ResultSet;
 import java.util.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 
-public class ScoreDAOImp implements ScoreDAO {
+public class ScoreDAOImpl implements ScoreDAO {
     @Override
     public void save(Score score) {
         String sql = "insert into scores (score,user_id,update_time) values (?,?,?)";
         try {
-            PreparedStatement ps = DBConnect.conn.prepareStatement(sql);
+            PreparedStatement ps = DBHelper.getConn().prepareStatement(sql);
             ps.setInt(1, score.score);
             ps.setInt(2, score.userID);
             ps.setString(3, getNowTime());
@@ -33,7 +35,7 @@ public class ScoreDAOImp implements ScoreDAO {
         //格式化当前日期
         String dataTime = SimpleDateFormat.format(current_date.getTime());
         try {
-            PreparedStatement ps = DBConnect.conn.prepareStatement(sql);
+            PreparedStatement ps = DBHelper.getConn().prepareStatement(sql);
             ps.setInt(1, score.score);
             ps.setString(2, getNowTime());
             ps.setInt(3, score.userID);
@@ -54,7 +56,7 @@ public class ScoreDAOImp implements ScoreDAO {
         PreparedStatement ps = null;
         Score score = null;
         try {
-            ps = DBConnect.conn.prepareStatement(sql);
+            ps = DBHelper.getConn().prepareStatement(sql);
             ps.setInt(1, userID);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {

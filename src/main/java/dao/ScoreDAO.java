@@ -1,6 +1,6 @@
 package dao;
 
-import model.Score;
+import entity.Score;
 
 
 public interface ScoreDAO {

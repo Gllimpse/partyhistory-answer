@@ -6,10 +6,14 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%
+    boolean isTodayAnswered = (boolean)request.getAttribute("isTodayAnswered");
+
+    String title = "今日还未答题，赶快开始答题吧！";
     String btnName = "Start Answer Questions!";
-//    if (request.getParameter("isTodayAnswered").equals("true")){
-//        btnName = "Check Your Rank!";
-//    }
+    if (isTodayAnswered){
+        btnName = "Check Your Rank!";
+        title = "今天已经答过题了，来看看排行吧！";
+    }
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -106,9 +110,10 @@
 <div class="container">
     <div class="login-wrapper">
         <div class="header">党史答题大比拼</div>
-        <input type="text" value="今日还未答题，赶快开始答题吧" class="input-item" readonly=readonly >
+        <input type="text" value="<%=title%>" class="input-item" readonly=readonly >
 
         <form action="StartServlet" method="post">
+            <input type="hidden" name="isTodayAnswered" value="<%=isTodayAnswered%>" >
             <input type="submit" value="<%=btnName%>" class="btn">
         </form>
     </div>

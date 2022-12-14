@@ -1,6 +1,6 @@
 package dao;
 
-import model.Question;
+import entity.Question;
 
 import java.util.List;
 

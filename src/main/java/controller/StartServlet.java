@@ -1,5 +1,9 @@
 package controller;
 
+import dao.QuestionDAO;
+import entity.Question;
+import factory.DaoFactory;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,6 +11,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Glimpse
@@ -26,13 +32,32 @@ public class StartServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        boolean isGoToAnswer = true;
+        String isTodayAnswered = req.getParameter("isTodayAnswered");
         RequestDispatcher dispatcher;
-        if (isGoToAnswer) {
+        if (!isTodayAnswered.equals("true")) {
+            QuestionDAO qDao = DaoFactory.getQuestionDAO();
+            List<Question> qList = qDao.getAll();
+            List<List<String>> answerList = new ArrayList<>();
+            qList.forEach(q -> {
+                answerList.add(getAnswer(q));
+            });
+            req.setAttribute("questions",qList);
+            req.setAttribute("answers",answerList);
             dispatcher = req.getRequestDispatcher("/answer.jsp");
         }else {
             dispatcher = req.getRequestDispatcher("/rank.jsp");
         }
         dispatcher.forward(req,resp);
+    }
+
+    private List<String> getAnswer(Question q) {
+        List<String> aList = new ArrayList<>();
+        // 除去首尾的“[”，“]”，再按‘,’切分成字符串数组
+        String[] aArray = q.answer.substring(1, q.answer.length() - 1).split(",");
+        for (String aStr : aArray){
+            // 除去首尾的“ " ”
+            aList.add(aStr.substring(1, q.answer.length() - 1));
+        }
+        return aList;
     }
 }

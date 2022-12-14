@@ -1,12 +1,12 @@
-package daoimp;
+package dao.impl;
 
 import dao.QuestionDAO;
-import model.Question;
+import entity.Question;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuestionDAOImp implements QuestionDAO {
+public class QuestionDAOImpl implements QuestionDAO {
     @Override
     public void save(Question question) {
 
