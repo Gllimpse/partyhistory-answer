@@ -10,9 +10,9 @@ public class DBHelper {
         //jdbc驱动
         String driver="com.mysql.cj.jdbc.Driver";
         //这里我的数据库是cxxt
-        String url="jdbc:mysql://localhost:3306/webDB?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true";
+        String url="jdbc:mysql://localhost:3306/partyhistory?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true";
         String user="root";
-        String password="zhuyucong137168";
+        String password="123456";
         try {
             //注册JDBC驱动程序
             Class.forName(driver);
