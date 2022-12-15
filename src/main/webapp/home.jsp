@@ -6,8 +6,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%
-    boolean isTodayAnswered = (boolean)request.getAttribute("isTodayAnswered");
-
+//    boolean isTodayAnswered = (boolean)request.getAttribute("isTodayAnswered");
+    boolean isTodayAnswered = false;
     String title = "今日还未答题，赶快开始答题吧！";
     String btnName = "Start Answer Questions!";
     if (isTodayAnswered){

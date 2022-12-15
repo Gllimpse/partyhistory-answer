@@ -5,5 +5,5 @@ import entity.Question;
 import java.util.List;
 
 public interface QuestionService {
-    List<Question> getQuestions();
+    List<Question> getQuestions(int[] ids);
 }

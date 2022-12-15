@@ -32,11 +32,11 @@ public class StartServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String isTodayAnswered = req.getParameter("isTodayAnswered");
+        String isTodayAnswered = "false";
         RequestDispatcher dispatcher;
         if (!isTodayAnswered.equals("true")) {
             QuestionDAO qDao = DaoFactory.getQuestionDAO();
-            List<Question> qList = qDao.getAll();
+            List<Question> qList = qDao.getQuestions(new int[]{1,2,3,4,5,6,7,8,9,10});
             List<List<String>> answerList = new ArrayList<>();
             qList.forEach(q -> {
                 answerList.add(getAnswer(q));
@@ -56,7 +56,7 @@ public class StartServlet extends HttpServlet {
         String[] aArray = q.answer.substring(1, q.answer.length() - 1).split(",");
         for (String aStr : aArray){
             // 除去首尾的“ " ”
-            aList.add(aStr.substring(1, q.answer.length() - 1));
+            aList.add(aStr.substring(1, aStr.length() - 1));
         }
         return aList;
     }

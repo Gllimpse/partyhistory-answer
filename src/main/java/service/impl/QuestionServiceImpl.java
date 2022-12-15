@@ -9,8 +9,8 @@ import java.util.List;
 
 public class QuestionServiceImpl implements QuestionService {
     @Override
-    public List<Question> getQuestions() {
+    public List<Question> getQuestions(int[] ids) {
         QuestionDAO qDao = DaoFactory.getQuestionDAO();
-        return qDao.getAll();
+        return qDao.getQuestions(ids);
     }
 }

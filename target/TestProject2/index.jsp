@@ -6,7 +6,7 @@
     <title>党史答题大比拼</title>
 </head>
 <%
-    session.setAttribute("user", new User());
+//    session.setAttribute("user", new User());
 %>
 <body>
 <form action="home.jsp" method="post">

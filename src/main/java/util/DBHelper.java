@@ -11,7 +11,7 @@ public class DBHelper {
         //这里我的数据库是cxxt
         String url="jdbc:mysql://localhost:3306/partyhistory?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true";
         String user="root";
-        String password="123456";
+        String password="zhuyucong137168";
         try {
             //注册JDBC驱动程序
             Class.forName(driver);
