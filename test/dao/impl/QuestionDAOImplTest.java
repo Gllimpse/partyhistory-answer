@@ -1,4 +1,4 @@
-package dao.daoimp;
+package dao.impl;
 
 
 import entity.Question;
@@ -6,11 +6,11 @@ import junit.framework.TestCase;
 
 import java.util.List;
 
-public class QuestionDAOImpTest extends TestCase {
+public class QuestionDAOImplTest extends TestCase {
 
     //测试获取问题数据
     public void testGetQuestions() {
-        QuestionDAOImp qDAOImp=new QuestionDAOImp();
+        QuestionDAOImpl qDAOImp=new QuestionDAOImpl();
         List<Question> questions=qDAOImp.getQuestions(null);
 
         for(Question q:questions) {

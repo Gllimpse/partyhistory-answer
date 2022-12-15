@@ -2,7 +2,6 @@ package entity;
 
 public class Question {
     public int id;
-
     public String question;
 
     public String answer;

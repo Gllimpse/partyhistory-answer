@@ -2,6 +2,14 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/partyhistory.sql" dialect="GenericSQL" />
+<<<<<<< HEAD
     <file url="file://$PROJECT_DIR$/src/main/java/dao/daoimp/UserDAOImp.java" dialect="GenericSQL" />
+=======
+<<<<<<< HEAD
+    <file url="file://$PROJECT_DIR$/src/main/java/dao/impl/UserDAOImpl.java" dialect="GenericSQL" />
+=======
+    <file url="file://$PROJECT_DIR$/src/main/java/dao/daoimp/UserDAOImp.java" dialect="GenericSQL" />
+>>>>>>> dev-xzh
+>>>>>>> master
   </component>
 </project>

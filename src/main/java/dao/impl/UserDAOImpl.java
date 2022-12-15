@@ -1,4 +1,4 @@
-package dao.daoimp;
+package dao.impl;
 
 import dao.UserDAO;
 import entity.User;
@@ -9,8 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 
-public class UserDAOImp implements UserDAO {
-
+public class UserDAOImpl implements UserDAO {
     @Override
     public void save(User user) {
         String sql = "insert into user (account,password) values (?,?)";

@@ -4,6 +4,7 @@ import java.sql.Timestamp;
 
 public class Score {
     public int id;
+
     public int score;//得分
     public int userID; //用户id
     public String  update_time;//提交时间

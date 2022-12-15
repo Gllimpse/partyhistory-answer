@@ -1,8 +1,7 @@
-package dao.daoimp;
+package dao.impl;
 
 import dao.QuestionDAO;
 import entity.Question;
-import entity.User;
 import util.DBHelper;
 
 import java.sql.PreparedStatement;
@@ -11,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuestionDAOImp implements QuestionDAO {
+public class QuestionDAOImpl implements QuestionDAO {
     @Override
     public void save(Question question) {}
 

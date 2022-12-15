@@ -1,4 +1,5 @@
-package dao.daoimp;
+package dao.impl;
+
 
 import dao.ScoreDAO;
 import entity.Score;
@@ -7,12 +8,10 @@ import util.DBHelper;
 import java.sql.ResultSet;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.text.SimpleDateFormat;
 
-public class ScoreDAOImp implements ScoreDAO {
+public class ScoreDAOImpl implements ScoreDAO {
     @Override
     public void save(Score score) {
         String sql = "insert into scores (score,user_id,update_time) values (?,?,?)";
