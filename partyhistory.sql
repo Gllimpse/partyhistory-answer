@@ -26,5 +26,7 @@ create table `partyhistory`.scores
     user_id     int      not null,
     constraint scores_user_id_fk
         foreign key (user_id) references `partyhistory`.user (id)
+    constraint scores_userid_uindex
+            unique (user_id)
 );
 

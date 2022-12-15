@@ -1,9 +1,6 @@
 package dao;
 
-import model.Question;
-import model.User;
-
-import java.util.List;
+import entity.User;
 
 public interface UserDAO {
     void save(User user);
