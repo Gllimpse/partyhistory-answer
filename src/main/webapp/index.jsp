@@ -9,7 +9,7 @@
 <%
     }
     Cookie[] cookies=request.getCookies();
-    if (cookies!=null) {
+    if (cookies != null) {
         for (Cookie cookie : cookies) {
             if (cookie.getName().equals("user")) { //存在cookie 重定向到home页面
                 response.sendRedirect("isAnswer?user=" + cookie.getValue());

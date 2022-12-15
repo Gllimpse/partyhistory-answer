@@ -1,5 +1,6 @@
 package controller;
 
+import entity.Rank;
 import factory.ServiceFactory;
 
 import javax.servlet.RequestDispatcher;
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 import java.util.Objects;
 
 @WebServlet("/rank")
@@ -20,17 +22,10 @@ public class RankServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Cookie[] cookies=req.getCookies();
-        String account ="";
-        if (cookies!=null) {
-            for (Cookie cookie : cookies) {
-                if (cookie.getName().equals("user")) { //存在cookie 重定向到home页面
-                    account=cookie.getValue();
-                }
-            }
-        }
-
-
+        List<Rank> ranks=ServiceFactory.getScoreService().getRankList();
+        req.setAttribute("ranks",ranks);
+        RequestDispatcher rd = getServletConfig().getServletContext().getRequestDispatcher("/rank.jsp");
+        rd.forward(req, resp);
     }
 
     @Override

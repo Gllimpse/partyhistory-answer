@@ -2,6 +2,7 @@ package dao.impl;
 
 
 import dao.ScoreDAO;
+import entity.Question;
 import entity.Score;
 import util.DBHelper;
 
@@ -10,6 +11,8 @@ import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ScoreDAOImpl implements ScoreDAO {
     @Override
@@ -73,5 +76,25 @@ public class ScoreDAOImpl implements ScoreDAO {
         // Convert the LocalDateTime object to a Timestamp object
         Timestamp timestamp = Timestamp.valueOf(now);
         return  timestamp;
+    }
+
+    public List<Score> getScores(){
+        String sql = "select * from scores order by score desc limit 10";
+        PreparedStatement ps = null;
+        List<Score> scores = new ArrayList<>();
+        try {
+            ps = DBHelper.getConn().prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+               Score score = new Score(rs.getInt("id"),
+                        rs.getInt("score"),
+                        rs.getInt("user_id"),
+                        rs.getTimestamp("update_time").toString());
+               scores.add(score);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return scores;
     }
 }

@@ -2,7 +2,9 @@ package controller;
 
 import dao.QuestionDAO;
 import entity.Question;
+import entity.Rank;
 import factory.DaoFactory;
+import factory.ServiceFactory;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -32,7 +34,7 @@ public class StartServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String isTodayAnswered = "false";
+        String isTodayAnswered = req.getParameter("isTodayAnswered");
         RequestDispatcher dispatcher;
         if (!isTodayAnswered.equals("true")) {
             QuestionDAO qDao = DaoFactory.getQuestionDAO();
@@ -45,6 +47,9 @@ public class StartServlet extends HttpServlet {
             req.setAttribute("answers",answerList);
             dispatcher = req.getRequestDispatcher("/answer.jsp");
         }else {
+            //储存排行信息
+            List<Rank> ranks= ServiceFactory.getScoreService().getRankList();
+            req.setAttribute("ranks",ranks);
             dispatcher = req.getRequestDispatcher("/rank.jsp");
         }
         dispatcher.forward(req,resp);

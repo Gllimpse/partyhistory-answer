@@ -68,4 +68,23 @@ public class UserDAOImpl implements UserDAO {
         }
         return user;
     }
+
+    public User getUserById(int userID){
+        String sql = "select * from user where id = ?";
+        PreparedStatement ps = null;
+        User user = null;
+        try {
+            ps = DBHelper.getConn().prepareStatement(sql);
+            ps.setInt(1,userID);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                user = new User(rs.getInt("id"),
+                        rs.getString("account"),
+                        rs.getString("password"));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return user;
+    }
 }

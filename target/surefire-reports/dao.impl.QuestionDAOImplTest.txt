@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: dao.impl.QuestionDAOImplTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.042 s <<< FAILURE! - in dao.impl.QuestionDAOImplTest
+testGetQuestions(dao.impl.QuestionDAOImplTest)  Time elapsed: 0.014 s  <<< ERROR!
+java.lang.NullPointerException
+	at dao.impl.QuestionDAOImplTest.testGetQuestions(QuestionDAOImplTest.java:14)
+

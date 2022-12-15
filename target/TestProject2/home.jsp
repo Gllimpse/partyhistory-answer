@@ -8,16 +8,10 @@
 <%
     String title = "今日还未答题，赶快开始答题吧！";
     String btnName = "Start Answer Questions!";
-    boolean isTodayAnswered = false;
-    if (request.getAttribute("isTodayAnswered")==null){
-        System.out.println("what ???");
-        response.sendRedirect("error.html");
-    }else {
-        isTodayAnswered = (boolean) request.getAttribute("isTodayAnswered");
-        if (isTodayAnswered) {
-            btnName = "Check Your Rank!";
-            title = "今天已经答过题了，来看看排行吧！";
-        }
+    boolean isTodayAnswered = (boolean) request.getAttribute("isTodayAnswered");
+    if (isTodayAnswered) {
+        btnName = "Check Your Rank!";
+        title = "今天已经答过题了，来看看排行吧！";
     }
 %>
 <!DOCTYPE html>
@@ -78,7 +72,7 @@
             /*隐藏边框*/
             border: 0;
             /*border-bottom: 1px solid rgb(128, 125, 125);*/
-            font-size: 22px;
+            font-size: 20px;
             font-family: "Comic Sans MS", serif;
             outline: none;
         }

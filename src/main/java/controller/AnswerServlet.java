@@ -6,6 +6,7 @@ import service.UserService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -40,7 +41,14 @@ public class AnswerServlet extends HttpServlet {
             }
         }
         UserService userService = ServiceFactory.getUserService();
-//        userService.submitScore((User)req.getSession().getAttribute("user"),totalScore);
+        String account = null;
+        for (Cookie c : req.getCookies()){
+            if (c.getName().equals("user")){
+                account = c.getValue();
+                break;
+            }
+        }
+        userService.submitScore(account,totalScore);
         req.setAttribute("score",totalScore);
         req.getRequestDispatcher("/result.jsp").forward(req,resp);
     }

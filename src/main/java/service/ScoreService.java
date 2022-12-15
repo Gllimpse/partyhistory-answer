@@ -1,11 +1,12 @@
 package service;
 
+import entity.Rank;
 import entity.Score;
 import entity.User;
 
 import java.util.List;
 
 public interface ScoreService {
-    List<Score> getRankList();
+    List<Rank> getRankList();
     Score getUserScore(User user);
 }

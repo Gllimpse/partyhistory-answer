@@ -5,7 +5,7 @@ import entity.User;
 
 public interface UserService {
     String Login(String account,String password);
-    void Register(User user);
+    String Register(String account,String password);
     boolean isTodayAnswered(String account);
-    void submitScore(User user, int totalScore);
+    void submitScore(String account, int totalScore);
 }
