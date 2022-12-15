@@ -7,5 +7,5 @@ public interface UserService {
     String Login(String account,String password);
     void Register(User user);
     boolean isTodayAnswered(String account);
-    void submitScore(User user, int totalScore);
+    void submitScore(String account, int totalScore);
 }

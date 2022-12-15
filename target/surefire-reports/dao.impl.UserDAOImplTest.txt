@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: dao.impl.UserDAOImplTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! - in dao.impl.UserDAOImplTest
+testSave(dao.impl.UserDAOImplTest)  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.NullPointerException
+	at dao.impl.UserDAOImplTest.testSave(UserDAOImplTest.java:10)
+
+testGetUserByAccount(dao.impl.UserDAOImplTest)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NullPointerException
+	at dao.impl.UserDAOImplTest.testGetUserByAccount(UserDAOImplTest.java:18)
+
+testUpdate(dao.impl.UserDAOImplTest)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NullPointerException
+	at dao.impl.UserDAOImplTest.testUpdate(UserDAOImplTest.java:14)
+

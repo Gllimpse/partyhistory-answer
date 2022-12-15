@@ -31,7 +31,7 @@ public class IsAnswerServlet extends HttpServlet {
 
         Boolean hasAnswer=ServiceFactory.getUserService().isTodayAnswered(account);
         req.setAttribute("isTodayAnswered", hasAnswer);
-        RequestDispatcher rd = getServletConfig().getServletContext().getRequestDispatcher("home.jsp");
+        RequestDispatcher rd = getServletConfig().getServletContext().getRequestDispatcher("/home.jsp");
         rd.forward(req, resp);
     }
 

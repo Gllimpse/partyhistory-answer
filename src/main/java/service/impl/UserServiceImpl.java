@@ -62,9 +62,17 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void submitScore(User user, int totalScore) {
+    public void submitScore(String account, int totalScore) {
         ScoreDAO scoreDAO = DaoFactory.getScoreDAO();
-        int newScore = scoreDAO.getScore(user.id).score+totalScore;
+        User user = DaoFactory.getUserDAO().getUserByAccount(account);
+        int oldScore;
+        Score oldRecord = scoreDAO.getScore(user.id);
+        if (oldRecord == null){
+            oldScore = 0;
+        }else {
+            oldScore = oldRecord.score;
+        }
+        int newScore = oldScore+totalScore;
         String currTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date());
         scoreDAO.save(new Score(0,newScore,user.id,currTime));
     }

@@ -9,9 +9,11 @@
 <%
     }
     Cookie[] cookies=request.getCookies();
-    for (Cookie cookie :cookies){
-        if (cookie.getName().equals("user")){ //存在cookie 重定向到home页面
-            response.sendRedirect("isAnswer?user="+cookie.getValue());
+    if (cookies != null) {
+        for (Cookie cookie : cookies) {
+            if (cookie.getName().equals("user")) { //存在cookie 重定向到home页面
+                response.sendRedirect("isAnswer?user=" + cookie.getValue());
+            }
         }
     }
 %>

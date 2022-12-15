@@ -32,7 +32,7 @@ public class StartServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String isTodayAnswered = "false";
+        String isTodayAnswered = req.getParameter("isTodayAnswered");
         RequestDispatcher dispatcher;
         if (!isTodayAnswered.equals("true")) {
             QuestionDAO qDao = DaoFactory.getQuestionDAO();
