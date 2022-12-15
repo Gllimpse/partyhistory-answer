@@ -8,5 +8,5 @@ public interface QuestionDAO {
     void save(Question question);
     void update(Question question);
     void delete(Question question);
-    List<Question> getAll();
+    List<Question> getQuestions(int[] ids);
 }

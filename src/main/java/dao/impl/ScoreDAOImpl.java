@@ -5,10 +5,10 @@ import entity.Score;
 import util.DBHelper;
 
 import java.sql.ResultSet;
-import java.util.Date;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.text.SimpleDateFormat;
 
 public class ScoreDAOImpl implements ScoreDAO {
     @Override
@@ -18,7 +18,7 @@ public class ScoreDAOImpl implements ScoreDAO {
             PreparedStatement ps = DBHelper.getConn().prepareStatement(sql);
             ps.setInt(1, score.score);
             ps.setInt(2, score.userID);
-            ps.setString(3, getNowTime());
+            ps.setTimestamp(3, getNowTimeStamp());
             ps.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -28,16 +28,10 @@ public class ScoreDAOImpl implements ScoreDAO {
     @Override
     public void update(Score score) {
         String sql = "update scores set score=?,update_time=? where user_id=?";
-        //生成日期对象
-        Date current_date = new Date();
-        //设置日期格式化样式为：yyyy-MM-dd
-        SimpleDateFormat SimpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        //格式化当前日期
-        String dataTime = SimpleDateFormat.format(current_date.getTime());
         try {
             PreparedStatement ps = DBHelper.getConn().prepareStatement(sql);
             ps.setInt(1, score.score);
-            ps.setString(2, getNowTime());
+            ps.setTimestamp(2, getNowTimeStamp());
             ps.setInt(3, score.userID);
             ps.executeUpdate();
         } catch (SQLException e) {
@@ -60,10 +54,13 @@ public class ScoreDAOImpl implements ScoreDAO {
             ps.setInt(1, userID);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
+                Timestamp timestamp=rs.getTimestamp("update_time");
+                String time=timestamp.toString().substring(0,19);//截取到毫秒
+
                 score = new Score(rs.getInt("id"),
                         rs.getInt("score"),
                         rs.getInt("user_id"),
-                        rs.getString("update_time"));
+                       time);
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -72,13 +69,11 @@ public class ScoreDAOImpl implements ScoreDAO {
     }
 
 
-    private String getNowTime() {
-        //生成日期对象
-        Date current_date = new Date();
-        //设置日期格式化样式为：yyyy-MM-dd
-        SimpleDateFormat SimpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        //格式化当前日期
-        String dataTime = SimpleDateFormat.format(current_date.getTime());
-        return dataTime;
+    public Timestamp getNowTimeStamp() {
+        LocalDateTime now = LocalDateTime.now();
+
+        // Convert the LocalDateTime object to a Timestamp object
+        Timestamp timestamp = Timestamp.valueOf(now);
+        return  timestamp;
     }
 }

@@ -889,7 +889,64 @@
     <collation id="281" parent="1" name="utf8mb4_zh_0900_as_cs">
       <Charset>utf8mb4</Charset>
     </collation>
+<<<<<<< HEAD
     <user id="282" parent="1" name="mysql.infoschema">
+=======
+    <schema id="274" parent="1" name="account-system">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="275" parent="1" name="answer">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="276" parent="1" name="christina_volunteer">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="277" parent="1" name="excel">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="278" parent="1" name="go_gin_api">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="279" parent="1" name="gqt-century">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="280" parent="1" name="import">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="281" parent="1" name="information_schema">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="282" parent="1" name="mysql">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="283" parent="1" name="partyhistory">
+      <Current>1</Current>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="284" parent="1" name="performance_schema">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="285" parent="1" name="senpai_help_me">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="286" parent="1" name="studentsystem">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="287" parent="1" name="sys">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="288" parent="1" name="test">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="289" parent="1" name="youth-youyue">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="290" parent="1" name="实验6">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <user id="291" parent="1" name="mysql.infoschema">
+      <CanLogin>0</CanLogin>
+>>>>>>> dev-xzh
       <Host>localhost</Host>
       <ObjectGrants>SELECT
 </ObjectGrants>
@@ -912,60 +969,162 @@ SELECT|sys.sys_config:null
       <ObjectGrants>SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,RELOAD,SHUTDOWN,PROCESS,FILE,REFERENCES,INDEX,ALTER,SHOW DATABASES,SUPER,CREATE TEMPORARY TABLES,LOCK TABLES,EXECUTE,REPLICATION SLAVE,REPLICATION CLIENT,CREATE VIEW,SHOW VIEW,CREATE ROUTINE,ALTER ROUTINE,CREATE USER,EVENT,TRIGGER,CREATE TABLESPACE,CREATE ROLE,DROP ROLE!
 </ObjectGrants>
     </user>
+<<<<<<< HEAD
     <table id="286" parent="6" name="questions"/>
     <table id="287" parent="6" name="scores"/>
     <table id="288" parent="6" name="user"/>
     <column id="289" parent="286" name="id">
       <Position>1</Position>
+=======
+    <table id="295" parent="283" name="questions">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="296" parent="283" name="scores">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="297" parent="283" name="user">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="298" parent="289" name="applies">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="299" parent="289" name="applies_copy1">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="300" parent="289" name="departments">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="301" parent="289" name="filter_pools">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="302" parent="289" name="push_failed">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="303" parent="289" name="result_pushes">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="304" parent="289" name="step_pushes">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="305" parent="289" name="sub_departments">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="306" parent="295" name="id">
+      <AutoIncrement>201</AutoIncrement>
+>>>>>>> dev-xzh
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
+<<<<<<< HEAD
     <column id="290" parent="286" name="question">
       <Position>2</Position>
+=======
+    <column id="307" parent="295" name="question">
+      <DataType>text|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="308" parent="295" name="answer">
+>>>>>>> dev-xzh
       <DataType>text|0s</DataType>
     </column>
     <column id="291" parent="286" name="answer">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
+<<<<<<< HEAD
     <column id="292" parent="286" name="right_answer">
+=======
+    <column id="309" parent="295" name="right_answer">
+      <DataType>char(1)|0s</DataType>
+>>>>>>> dev-xzh
       <Position>4</Position>
       <DataType>char(1)|0s</DataType>
     </column>
+<<<<<<< HEAD
     <key id="293" parent="286" name="PRIMARY">
+=======
+    <key id="310" parent="295" name="PRIMARY">
+      <ColNames>id</ColNames>
+>>>>>>> dev-xzh
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
+<<<<<<< HEAD
     <column id="294" parent="287" name="id">
       <Position>1</Position>
+=======
+    <column id="311" parent="296" name="id">
+      <AutoIncrement>1</AutoIncrement>
+>>>>>>> dev-xzh
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
+<<<<<<< HEAD
     <column id="295" parent="287" name="update_time">
+=======
+    <column id="312" parent="296" name="update_time">
+      <DataType>datetime|0s</DataType>
+>>>>>>> dev-xzh
       <Position>2</Position>
       <DataType>datetime|0s</DataType>
     </column>
+<<<<<<< HEAD
     <column id="296" parent="287" name="score">
+=======
+    <column id="313" parent="296" name="score">
+      <DataType>int|0s</DataType>
+>>>>>>> dev-xzh
       <Position>3</Position>
       <DataType>int|0s</DataType>
     </column>
+<<<<<<< HEAD
     <column id="297" parent="287" name="user_id">
       <Position>4</Position>
+=======
+    <column id="314" parent="296" name="user_id">
+>>>>>>> dev-xzh
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <index id="298" parent="287" name="scores_user_id_fk">
+=======
+    <foreign-key id="315" parent="296" name="scores_user_id_fk">
+      <ColNames>user_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>user</RefTableName>
+    </foreign-key>
+    <index id="316" parent="296" name="scores_pk">
+>>>>>>> dev-xzh
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
+      <Unique>1</Unique>
     </index>
+<<<<<<< HEAD
     <key id="299" parent="287" name="PRIMARY">
+=======
+    <key id="317" parent="296" name="PRIMARY">
+      <ColNames>id</ColNames>
+>>>>>>> dev-xzh
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
+<<<<<<< HEAD
     <foreign-key id="300" parent="287" name="scores_user_id_fk">
       <ColNames>user_id</ColNames>
       <RefTableName>user</RefTableName>
@@ -973,33 +1132,463 @@ SELECT|sys.sys_config:null
     </foreign-key>
     <column id="301" parent="288" name="id">
       <Position>1</Position>
+=======
+    <key id="318" parent="296" name="scores_pk">
+      <ColNames>user_id</ColNames>
+      <UnderlyingIndexName>scores_pk</UnderlyingIndexName>
+    </key>
+    <column id="319" parent="297" name="id">
+      <AutoIncrement>1</AutoIncrement>
+>>>>>>> dev-xzh
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
+<<<<<<< HEAD
     <column id="302" parent="288" name="account">
       <Position>2</Position>
+=======
+    <column id="320" parent="297" name="account">
+>>>>>>> dev-xzh
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <column id="303" parent="288" name="password">
       <Position>3</Position>
+=======
+    <column id="321" parent="297" name="password">
+>>>>>>> dev-xzh
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
+<<<<<<< HEAD
     <index id="304" parent="288" name="user_account_uindex">
+=======
+    <index id="322" parent="297" name="user_account_uindex">
+>>>>>>> dev-xzh
       <ColNames>account</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
+<<<<<<< HEAD
     <key id="305" parent="288" name="PRIMARY">
+=======
+    <key id="323" parent="297" name="PRIMARY">
+      <ColNames>id</ColNames>
+>>>>>>> dev-xzh
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
+<<<<<<< HEAD
     <key id="306" parent="288" name="user_account_uindex">
+=======
+    <key id="324" parent="297" name="user_account_uindex">
+>>>>>>> dev-xzh
       <ColNames>account</ColNames>
       <UnderlyingIndexName>user_account_uindex</UnderlyingIndexName>
+    </key>
+    <column id="325" parent="298" name="id">
+      <AutoIncrement>17834</AutoIncrement>
+      <DataType>bigint unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="326" parent="298" name="created_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="327" parent="298" name="updated_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="328" parent="298" name="deleted_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="329" parent="298" name="real_name">
+      <DataType>longtext|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="330" parent="298" name="stu_num">
+      <DataType>varchar(191)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="331" parent="298" name="phone">
+      <DataType>longtext|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="332" parent="298" name="state">
+      <DataType>bigint|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="333" parent="298" name="sub_department_id">
+      <DataType>bigint unsigned|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="334" parent="298" name="step_push_ids">
+      <DataType>longtext|0s</DataType>
+      <Position>10</Position>
+    </column>
+    <column id="335" parent="298" name="result_push_id">
+      <DataType>bigint unsigned|0s</DataType>
+      <Position>11</Position>
+    </column>
+    <index id="336" parent="298" name="applies_stu_num_sub_department_id_uindex">
+      <ColNames>stu_num
+sub_department_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="337" parent="298" name="applies_copy_deleted_at_index">
+      <ColNames>deleted_at</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="338" parent="298" name="idx_applies_deleted_at">
+      <ColNames>deleted_at</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="339" parent="298" name="idx_name">
+      <ColNames>stu_num</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="340" parent="298" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <key id="341" parent="298" name="applies_stu_num_sub_department_id_uindex">
+      <ColNames>stu_num
+sub_department_id</ColNames>
+      <UnderlyingIndexName>applies_stu_num_sub_department_id_uindex</UnderlyingIndexName>
+    </key>
+    <column id="342" parent="299" name="id">
+      <AutoIncrement>766</AutoIncrement>
+      <DataType>bigint unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="343" parent="299" name="created_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="344" parent="299" name="updated_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="345" parent="299" name="deleted_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="346" parent="299" name="real_name">
+      <DataType>longtext|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="347" parent="299" name="stu_num">
+      <DataType>varchar(191)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="348" parent="299" name="phone">
+      <DataType>longtext|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="349" parent="299" name="state">
+      <DataType>bigint|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="350" parent="299" name="sub_department_id">
+      <DataType>bigint unsigned|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="351" parent="299" name="step_push_ids">
+      <DataType>longtext|0s</DataType>
+      <Position>10</Position>
+    </column>
+    <column id="352" parent="299" name="result_push_id">
+      <DataType>bigint unsigned|0s</DataType>
+      <Position>11</Position>
+    </column>
+    <index id="353" parent="299" name="idx_applies_deleted_at">
+      <ColNames>deleted_at</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="354" parent="299" name="idx_name">
+      <ColNames>stu_num</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="355" parent="299" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="356" parent="300" name="id">
+      <AutoIncrement>336</AutoIncrement>
+      <DataType>bigint unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="357" parent="300" name="created_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="358" parent="300" name="updated_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="359" parent="300" name="deleted_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="360" parent="300" name="account">
+      <DataType>longtext|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="361" parent="300" name="name">
+      <DataType>longtext|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="362" parent="300" name="avatar">
+      <DataType>longtext|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="363" parent="300" name="slogan">
+      <DataType>longtext|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="364" parent="300" name="describe">
+      <DataType>longtext|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="365" parent="300" name="label">
+      <DataType>longtext|0s</DataType>
+      <Position>10</Position>
+    </column>
+    <column id="366" parent="300" name="superior_name">
+      <DataType>longtext|0s</DataType>
+      <Position>11</Position>
+    </column>
+    <column id="367" parent="300" name="start_time">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>12</Position>
+    </column>
+    <column id="368" parent="300" name="end_time">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>13</Position>
+    </column>
+    <column id="369" parent="300" name="recruitment_range">
+      <DataType>longtext|0s</DataType>
+      <Position>14</Position>
+    </column>
+    <index id="370" parent="300" name="idx_departments_deleted_at">
+      <ColNames>deleted_at</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="371" parent="300" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="372" parent="301" name="id">
+      <AutoIncrement>125078</AutoIncrement>
+      <DataType>bigint unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="373" parent="301" name="created_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="374" parent="301" name="updated_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="375" parent="301" name="deleted_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="376" parent="301" name="sub_department_id">
+      <DataType>bigint unsigned|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="377" parent="301" name="apply_id">
+      <DataType>bigint unsigned|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="378" parent="301" name="step">
+      <DataType>bigint|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <index id="379" parent="301" name="idx_unique">
+      <ColNames>sub_department_id
+apply_id
+step</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="380" parent="301" name="idx_filter_pools_deleted_at">
+      <ColNames>deleted_at</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="381" parent="301" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <key id="382" parent="301" name="idx_unique">
+      <ColNames>sub_department_id
+apply_id
+step</ColNames>
+      <UnderlyingIndexName>idx_unique</UnderlyingIndexName>
+    </key>
+    <column id="383" parent="302" name="phone">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>1</Position>
+    </column>
+    <column id="384" parent="302" name="name">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="385" parent="303" name="id">
+      <AutoIncrement>158</AutoIncrement>
+      <DataType>bigint unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="386" parent="303" name="created_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="387" parent="303" name="updated_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="388" parent="303" name="deleted_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="389" parent="303" name="qq">
+      <DataType>longtext|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="390" parent="303" name="contact">
+      <DataType>longtext|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="391" parent="303" name="phone">
+      <DataType>longtext|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <index id="392" parent="303" name="idx_result_pushes_deleted_at">
+      <ColNames>deleted_at</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="393" parent="303" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="394" parent="304" name="id">
+      <AutoIncrement>540</AutoIncrement>
+      <DataType>bigint unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="395" parent="304" name="created_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="396" parent="304" name="updated_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="397" parent="304" name="deleted_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="398" parent="304" name="step">
+      <DataType>bigint|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="399" parent="304" name="exam_type">
+      <DataType>longtext|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="400" parent="304" name="exam_time">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="401" parent="304" name="place">
+      <DataType>longtext|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="402" parent="304" name="contact">
+      <DataType>longtext|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="403" parent="304" name="phone">
+      <DataType>longtext|0s</DataType>
+      <Position>10</Position>
+    </column>
+    <index id="404" parent="304" name="idx_step_pushes_deleted_at">
+      <ColNames>deleted_at</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="405" parent="304" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="406" parent="305" name="id">
+      <AutoIncrement>968</AutoIncrement>
+      <DataType>bigint unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="407" parent="305" name="created_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="408" parent="305" name="updated_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="409" parent="305" name="deleted_at">
+      <DataType>datetime(3)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="410" parent="305" name="super_department_id">
+      <DataType>bigint unsigned|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="411" parent="305" name="name">
+      <DataType>longtext|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="412" parent="305" name="avatar">
+      <DataType>longtext|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="413" parent="305" name="slogan">
+      <DataType>longtext|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="414" parent="305" name="describe">
+      <DataType>longtext|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="415" parent="305" name="label">
+      <DataType>longtext|0s</DataType>
+      <Position>10</Position>
+    </column>
+    <index id="416" parent="305" name="idx_sub_departments_deleted_at">
+      <ColNames>deleted_at</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="417" parent="305" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
     </key>
   </database-model>
 </dataSource>
