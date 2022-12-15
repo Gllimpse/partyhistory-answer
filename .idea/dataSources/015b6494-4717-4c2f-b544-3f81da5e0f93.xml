@@ -1,37 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="MySQL">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.19">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.39">
     <root id="1">
-      <ServerVersion>8.0.28</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
-      <DefaultCasing>lower/lower</DefaultCasing>
+      <ServerVersion>8.0.28</ServerVersion>
     </root>
-    <schema id="2" parent="1" name="database_first">
-      <Collation>utf8mb4_0900_ai_ci</Collation>
-    </schema>
-    <schema id="3" parent="1" name="information_schema">
-      <Collation>utf8_general_ci</Collation>
-    </schema>
-    <schema id="4" parent="1" name="message_board">
-      <Collation>utf8mb4_0900_ai_ci</Collation>
-    </schema>
-    <schema id="5" parent="1" name="mysql">
-      <Collation>utf8mb4_0900_ai_ci</Collation>
-    </schema>
-    <schema id="6" parent="1" name="partyhistory">
+    <schema id="2" parent="1" name="partyhistory">
       <Current>1</Current>
-      <Collation>utf8mb4_0900_ai_ci</Collation>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="7" parent="1" name="performance_schema">
-      <Collation>utf8mb4_0900_ai_ci</Collation>
-    </schema>
-    <schema id="8" parent="1" name="sys">
-      <Collation>utf8mb4_0900_ai_ci</Collation>
-    </schema>
-    <schema id="9" parent="1" name="webdb">
-      <Collation>utf8mb4_0900_ai_ci</Collation>
-    </schema>
+<<<<<<< HEAD
     <collation id="10" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
     </collation>
@@ -917,55 +897,164 @@ SELECT|sys.sys_config:null
     <table id="288" parent="6" name="user"/>
     <column id="289" parent="286" name="id">
       <Position>1</Position>
+=======
+    <schema id="3" parent="1" name="account-system">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="4" parent="1" name="answer">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="5" parent="1" name="christina_volunteer">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="6" parent="1" name="excel">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="7" parent="1" name="go_gin_api">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="8" parent="1" name="gqt-century">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="9" parent="1" name="import">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="10" parent="1" name="information_schema">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="11" parent="1" name="mysql">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="12" parent="1" name="performance_schema">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="13" parent="1" name="senpai_help_me">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="14" parent="1" name="studentsystem">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="15" parent="1" name="sys">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="16" parent="1" name="test">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="17" parent="1" name="youth-youyue">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="18" parent="1" name="实验6">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <table id="19" parent="2" name="questions">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="20" parent="2" name="scores">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="21" parent="2" name="user">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="22" parent="19" name="id">
+      <AutoIncrement>201</AutoIncrement>
+>>>>>>> dev-xzh
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
+      <Position>1</Position>
     </column>
+<<<<<<< HEAD
     <column id="290" parent="286" name="question">
       <Position>2</Position>
+=======
+    <column id="23" parent="19" name="question">
       <DataType>text|0s</DataType>
+      <Position>2</Position>
     </column>
-    <column id="291" parent="286" name="answer">
+    <column id="24" parent="19" name="answer">
+>>>>>>> dev-xzh
+      <DataType>text|0s</DataType>
       <Position>3</Position>
-      <DataType>text|0s</DataType>
     </column>
+<<<<<<< HEAD
     <column id="292" parent="286" name="right_answer">
-      <Position>4</Position>
+=======
+    <column id="25" parent="19" name="right_answer">
       <DataType>char(1)|0s</DataType>
+>>>>>>> dev-xzh
+      <Position>4</Position>
     </column>
+<<<<<<< HEAD
     <key id="293" parent="286" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
+=======
+    <key id="26" parent="19" name="PRIMARY">
       <ColNames>id</ColNames>
+>>>>>>> dev-xzh
+      <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
+<<<<<<< HEAD
     <column id="294" parent="287" name="id">
       <Position>1</Position>
+=======
+    <column id="27" parent="20" name="id">
+      <AutoIncrement>4</AutoIncrement>
+>>>>>>> dev-xzh
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
+      <Position>1</Position>
     </column>
+<<<<<<< HEAD
     <column id="295" parent="287" name="update_time">
-      <Position>2</Position>
+=======
+    <column id="28" parent="20" name="update_time">
       <DataType>datetime|0s</DataType>
+>>>>>>> dev-xzh
+      <Position>2</Position>
     </column>
+<<<<<<< HEAD
     <column id="296" parent="287" name="score">
-      <Position>3</Position>
+=======
+    <column id="29" parent="20" name="score">
       <DataType>int|0s</DataType>
+>>>>>>> dev-xzh
+      <Position>3</Position>
     </column>
+<<<<<<< HEAD
     <column id="297" parent="287" name="user_id">
       <Position>4</Position>
+=======
+    <column id="30" parent="20" name="user_id">
+>>>>>>> dev-xzh
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
+      <Position>4</Position>
     </column>
+<<<<<<< HEAD
     <index id="298" parent="287" name="scores_user_id_fk">
+=======
+    <foreign-key id="31" parent="20" name="scores_user_id_fk">
+      <ColNames>user_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>user</RefTableName>
+    </foreign-key>
+    <index id="32" parent="20" name="scores_pk">
+>>>>>>> dev-xzh
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
+<<<<<<< HEAD
     <key id="299" parent="287" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
+=======
+    <key id="33" parent="20" name="PRIMARY">
       <ColNames>id</ColNames>
+>>>>>>> dev-xzh
+      <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
+<<<<<<< HEAD
     <foreign-key id="300" parent="287" name="scores_user_id_fk">
       <ColNames>user_id</ColNames>
       <RefTableName>user</RefTableName>
@@ -973,31 +1062,61 @@ SELECT|sys.sys_config:null
     </foreign-key>
     <column id="301" parent="288" name="id">
       <Position>1</Position>
+=======
+    <key id="34" parent="20" name="scores_pk">
+      <ColNames>user_id</ColNames>
+      <UnderlyingIndexName>scores_pk</UnderlyingIndexName>
+    </key>
+    <column id="35" parent="21" name="id">
+      <AutoIncrement>3</AutoIncrement>
+>>>>>>> dev-xzh
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
+      <Position>1</Position>
     </column>
+<<<<<<< HEAD
     <column id="302" parent="288" name="account">
       <Position>2</Position>
+=======
+    <column id="36" parent="21" name="account">
+>>>>>>> dev-xzh
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
+      <Position>2</Position>
     </column>
+<<<<<<< HEAD
     <column id="303" parent="288" name="password">
       <Position>3</Position>
+=======
+    <column id="37" parent="21" name="password">
+>>>>>>> dev-xzh
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
+      <Position>3</Position>
     </column>
+<<<<<<< HEAD
     <index id="304" parent="288" name="user_account_uindex">
+=======
+    <index id="38" parent="21" name="user_account_uindex">
+>>>>>>> dev-xzh
       <ColNames>account</ColNames>
-      <Unique>1</Unique>
       <Type>btree</Type>
+      <Unique>1</Unique>
     </index>
+<<<<<<< HEAD
     <key id="305" parent="288" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
+=======
+    <key id="39" parent="21" name="PRIMARY">
       <ColNames>id</ColNames>
+>>>>>>> dev-xzh
+      <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
+<<<<<<< HEAD
     <key id="306" parent="288" name="user_account_uindex">
+=======
+    <key id="40" parent="21" name="user_account_uindex">
+>>>>>>> dev-xzh
       <ColNames>account</ColNames>
       <UnderlyingIndexName>user_account_uindex</UnderlyingIndexName>
     </key>

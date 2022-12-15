@@ -3,8 +3,8 @@ package dao.impl;
 import entity.Score;
 import junit.framework.TestCase;
 
-public class ScoreDAOImpTest extends TestCase {
-    static private ScoreDAOImp sDAOImp = new ScoreDAOImp();
+public class ScoreDAOImplTest extends TestCase {
+    static private ScoreDAOImpl sDAOImp = new ScoreDAOImpl();
     public void testSave() {
         sDAOImp.save(new Score(10,1, ""));
     }

@@ -10,7 +10,6 @@ import java.sql.SQLException;
 
 
 public class UserDAOImpl implements UserDAO {
-
     @Override
     public void save(User user) {
         String sql = "insert into user (account,password) values (?,?)";

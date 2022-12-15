@@ -3,8 +3,8 @@ package dao.impl;
 import entity.User;
 import junit.framework.TestCase;
 
-public class UserDAOImpTest extends TestCase {
-    static UserDAOImp uDAOImp= new UserDAOImp();
+public class UserDAOImplTest extends TestCase {
+    static UserDAOImpl uDAOImp= new UserDAOImpl();
 
     public void testSave() {
         uDAOImp.save(new User(0,"root","123456"));
@@ -15,7 +15,7 @@ public class UserDAOImpTest extends TestCase {
     }
 
     public void testGetUserByAccount() {
-        User user=uDAOImp.getUserByAccount("root");
+        User user=uDAOImp.getUserByAccount("123");
         System.out.println(user.id+":"+user.account+":"+user.password);
     }
 }

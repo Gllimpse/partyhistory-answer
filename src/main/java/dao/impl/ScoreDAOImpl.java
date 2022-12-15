@@ -1,5 +1,6 @@
 package dao.impl;
 
+
 import dao.ScoreDAO;
 import entity.Score;
 import util.DBHelper;
@@ -54,13 +55,10 @@ public class ScoreDAOImpl implements ScoreDAO {
             ps.setInt(1, userID);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                Timestamp timestamp=rs.getTimestamp("update_time");
-                String time=timestamp.toString().substring(0,19);//截取到毫秒
-
                 score = new Score(rs.getInt("id"),
                         rs.getInt("score"),
                         rs.getInt("user_id"),
-                       time);
+                        rs.getTimestamp("update_time").toString());
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
