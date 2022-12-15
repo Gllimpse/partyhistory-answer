@@ -40,6 +40,8 @@ public class AnswerServlet extends HttpServlet {
             }
         }
         UserService userService = ServiceFactory.getUserService();
-        userService.submitScore((User)req.getSession().getAttribute("user"),totalScore);
+//        userService.submitScore((User)req.getSession().getAttribute("user"),totalScore);
+        req.setAttribute("score",totalScore);
+        req.getRequestDispatcher("/result.jsp").forward(req,resp);
     }
 }
