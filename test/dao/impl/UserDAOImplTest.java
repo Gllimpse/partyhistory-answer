@@ -15,7 +15,7 @@ public class UserDAOImplTest extends TestCase {
     }
 
     public void testGetUserByAccount() {
-        User user=uDAOImp.getUserByAccount("123");
-        System.out.println(user.id+":"+user.account+":"+user.password);
+        User user=uDAOImp.getUserByAccount("root");
+        //System.out.println(user.id+":"+user.account+":"+user.password);
     }
 }
