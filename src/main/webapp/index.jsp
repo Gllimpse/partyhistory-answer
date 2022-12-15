@@ -10,8 +10,8 @@
     }
     Cookie[] cookies=request.getCookies();
     for (Cookie cookie :cookies){
-        if (cookie.getName().equals("userID")){ //存在cookie 重定向到home页面
-            response.sendRedirect("home.jsp");
+        if (cookie.getName().equals("user")){ //存在cookie 重定向到home页面
+            response.sendRedirect("isAnswer?user="+cookie.getValue());
         }
     }
 %>
@@ -93,7 +93,7 @@
 </head>
 <body>
 <h1>Login</h1>
-<form method="post" action=login>
+<form method="post" action="login">
     <label for="account">用户名:</label><br>
     <input type="text" id="account" name="account"><br>
     <label for="password">密码:</label><br>

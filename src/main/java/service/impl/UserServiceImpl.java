@@ -39,12 +39,19 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean isTodayAnswered(User user) {
+    public boolean isTodayAnswered(String account) {
+        User user=DaoFactory.getUserDAO().getUserByAccount(account);
         ScoreDAO scoreDAO = DaoFactory.getScoreDAO();
-        String time = scoreDAO.getScore(user.id).update_time;
+
+        Score score =scoreDAO.getScore(user.id);
+        if (score==null){
+            return false;
+        }
+
+        String time = score.update_time;
         Date date = null;
         try {
-            date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS").parse(time);
+            date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").parse(time);
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -58,7 +65,7 @@ public class UserServiceImpl implements UserService {
     public void submitScore(User user, int totalScore) {
         ScoreDAO scoreDAO = DaoFactory.getScoreDAO();
         int newScore = scoreDAO.getScore(user.id).score+totalScore;
-        String currTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS").format(new Date());
+        String currTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date());
         scoreDAO.save(new Score(0,newScore,user.id,currTime));
     }
 }

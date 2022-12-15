@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
         }
 
         //生成cookie
-        Cookie cookie = new Cookie("userID",info);
+        Cookie cookie = new Cookie("user",info);
         cookie.setMaxAge(60*60*24);
         resp.addCookie(cookie);
         resp.sendRedirect("./index.jsp");

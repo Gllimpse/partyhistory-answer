@@ -7,35 +7,35 @@
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
       <ServerVersion>8.0.28</ServerVersion>
     </root>
-    <schema id="2" parent="1" name="account-system">
+    <schema id="2" parent="1" name="partyhistory">
+      <Current>1</Current>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="3" parent="1" name="answer">
+    <schema id="3" parent="1" name="account-system">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="4" parent="1" name="christina_volunteer">
+    <schema id="4" parent="1" name="answer">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="5" parent="1" name="excel">
+    <schema id="5" parent="1" name="christina_volunteer">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="6" parent="1" name="go_gin_api">
+    <schema id="6" parent="1" name="excel">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="7" parent="1" name="gqt-century">
+    <schema id="7" parent="1" name="go_gin_api">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="8" parent="1" name="import">
+    <schema id="8" parent="1" name="gqt-century">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="9" parent="1" name="information_schema">
+    <schema id="9" parent="1" name="import">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="10" parent="1" name="information_schema">
       <CollationName>utf8_general_ci</CollationName>
     </schema>
-    <schema id="10" parent="1" name="mysql">
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </schema>
-    <schema id="11" parent="1" name="partyhistory">
-      <Current>1</Current>
+    <schema id="11" parent="1" name="mysql">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="12" parent="1" name="performance_schema">
@@ -59,15 +59,15 @@
     <schema id="18" parent="1" name="实验6">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <table id="19" parent="11" name="questions">
+    <table id="19" parent="2" name="questions">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="20" parent="11" name="scores">
+    <table id="20" parent="2" name="scores">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="21" parent="11" name="user">
+    <table id="21" parent="2" name="user">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
