@@ -1,6 +1,10 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="TestProject2:war exploded">
+<<<<<<< HEAD
     <output-path>$PROJECT_DIR$/partyhistory-answer-master/target/TestProject2</output-path>
+=======
+    <output-path>$PROJECT_DIR$/target/TestProject2</output-path>
+>>>>>>> d828b45fef8f9e5deaedc6ee1536b3120a72cda6
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
@@ -19,7 +23,11 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
+<<<<<<< HEAD
         <element id="file-copy" path="$PROJECT_DIR$/partyhistory-answer-master/target/TestProject2/META-INF/MANIFEST.MF" />
+=======
+        <element id="file-copy" path="$PROJECT_DIR$/target/TestProject2/META-INF/MANIFEST.MF" />
+>>>>>>> d828b45fef8f9e5deaedc6ee1536b3120a72cda6
       </element>
       <element id="javaee-facet-resources" facet="TestProject2/web/Web" />
     </root>

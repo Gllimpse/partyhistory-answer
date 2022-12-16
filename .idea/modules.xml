@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/partyhistory-answer-master/TestProject2.iml" filepath="$PROJECT_DIR$/partyhistory-answer-master/TestProject2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/partyhistory-answer-master (1).iml" filepath="$PROJECT_DIR$/.idea/partyhistory-answer-master (1).iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/../TestProject2.iml" filepath="$PROJECT_DIR$/../TestProject2.iml" />
+>>>>>>> d828b45fef8f9e5deaedc6ee1536b3120a72cda6
     </modules>
   </component>
 </project>

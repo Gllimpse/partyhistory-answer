@@ -1,6 +1,10 @@
 <component name="ArtifactManager">
   <artifact type="war" name="TestProject2:war">
+<<<<<<< HEAD
     <output-path>$PROJECT_DIR$/partyhistory-answer-master/target</output-path>
+=======
+    <output-path>$PROJECT_DIR$/target</output-path>
+>>>>>>> d828b45fef8f9e5deaedc6ee1536b3120a72cda6
     <properties id="maven-jee-properties">
       <options>
         <module>TestProject2</module>
