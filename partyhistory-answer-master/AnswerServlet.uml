@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>controller.AnswerServlet</OriginalElement>
+  <nodes>
+    <node x="977.875" y="0.0">dao.ScoreDAO</node>
+    <node x="0.0" y="1806.0">factory.DaoFactory</node>
+    <node x="1200.875" y="0.0">dao.QuestionDAO</node>
+    <node x="0.0" y="1336.0">controller.StartServlet</node>
+    <node x="0.0" y="1659.0">service.impl.UserServiceImpl</node>
+    <node x="0.0" y="1507.0">service.UserService</node>
+    <node x="635.875" y="11.5">javax.servlet.ServletConfig</node>
+    <node x="769.0" y="1613.0">service.impl.QuestionServiceImpl</node>
+    <node x="278.375" y="630.0">javax.servlet.http.HttpServlet</node>
+    <node x="1595.0" y="1507.0">factory.ServiceFactory</node>
+    <node x="121.875" y="0.0">javax.servlet.Servlet</node>
+    <node x="1067.0" y="1507.0">entity.Question</node>
+    <node x="284.0" y="1507.0">service.ScoreService</node>
+    <node x="387.875" y="1347.5">controller.AnswerServlet</node>
+    <node x="530.0" y="1507.0">entity.Score</node>
+    <node x="769.0" y="1507.0">service.QuestionService</node>
+    <node x="461.875" y="59.0">java.io.Serializable</node>
+    <node x="284.0" y="1637.0">service.impl.ScoreServiceImpl</node>
+    <node x="41.25" y="826.5">javax.servlet.annotation.WebServlet</node>
+    <node x="1365.0" y="1507.0">entity.User</node>
+    <node x="1498.875" y="0.0">dao.UserDAO</node>
+    <node x="378.875" y="199.0">javax.servlet.GenericServlet</node>
+    <node x="285.0" y="1806.0">util.DBHelper</node>
+    <node x="1200.875" y="175.0">dao.impl.QuestionDAOImpl</node>
+    <node x="962.875" y="175.0">dao.impl.ScoreDAOImpl</node>
+    <node x="1498.875" y="175.0">dao.impl.UserDAOImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="controller.AnswerServlet" target="javax.servlet.annotation.WebServlet">
+      <point x="-93.75" y="-51.5" />
+      <point x="481.625" y="1306.0" />
+      <point x="198.75" y="1306.0" />
+      <point x="52.5" y="131.5" />
+    </edge>
+    <edge source="dao.impl.QuestionDAOImpl" target="dao.QuestionDAO">
+      <point x="0.0" y="-62.5" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="controller.StartServlet" target="javax.servlet.http.HttpServlet">
+      <point x="93.75" y="-63.0" />
+      <point x="281.25" y="1316.0" />
+      <point x="408.625" y="1316.0" />
+      <point x="-130.25" y="328.0" />
+    </edge>
+    <edge source="service.impl.ScoreServiceImpl" target="service.ScoreService">
+      <point x="0.0" y="-40.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="service.impl.UserServiceImpl" target="service.UserService">
+      <point x="0.0" y="-51.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="service.impl.QuestionServiceImpl" target="service.QuestionService">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="javax.servlet.GenericServlet" target="java.io.Serializable">
+      <point x="0.0" y="-190.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="controller.StartServlet" target="javax.servlet.annotation.WebServlet">
+      <point x="-93.75" y="-63.0" />
+      <point x="-52.5" y="131.5" />
+    </edge>
+    <edge source="dao.impl.UserDAOImpl" target="dao.UserDAO">
+      <point x="0.0" y="-62.5" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="dao.impl.ScoreDAOImpl" target="dao.ScoreDAO">
+      <point x="0.0" y="-74.5" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="javax.servlet.http.HttpServlet" target="javax.servlet.GenericServlet">
+      <point x="0.0" y="-328.0" />
+      <point x="0.0" y="190.5" />
+    </edge>
+    <edge source="controller.AnswerServlet" target="javax.servlet.http.HttpServlet">
+      <point x="93.75" y="-51.5" />
+      <point x="130.25" y="328.0" />
+    </edge>
+    <edge source="javax.servlet.GenericServlet" target="javax.servlet.Servlet">
+      <point x="-106.66666666666669" y="-190.5" />
+      <point x="432.2083333333333" y="174.0" />
+      <point x="281.875" y="174.0" />
+      <point x="0.0" y="74.5" />
+    </edge>
+    <edge source="javax.servlet.GenericServlet" target="javax.servlet.ServletConfig">
+      <point x="106.66666666666663" y="-190.5" />
+      <point x="645.5416666666666" y="174.0" />
+      <point x="776.875" y="174.0" />
+      <point x="0.0" y="63.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8710526315789475" x="536.3987915407854" y="334.99999999999994" />
+  <SelectedNodes />
+  <Categories>
+    <Category>字段</Category>
+    <Category>构造函数</Category>
+    <Category>方法</Category>
+    <Category>属性</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
