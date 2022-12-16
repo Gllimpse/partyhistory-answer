@@ -1,0 +1,14 @@
+<changelist name="在进行签出之前于_2022_12_15_21_01_取消提交了变更_[Changes]1" date="1671109286362" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2022_12_15_21_01_取消提交了变更_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="在进行签出之前于 2022/12/15 21:01 取消提交了变更 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/TestProject2/WEB-INF/classes/dao/impl/ScoreDAOImpl.class" />
+    <option name="AFTER_PATH" value="target/TestProject2/WEB-INF/classes/dao/impl/ScoreDAOImpl.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2022_12_15_21_01_取消提交了变更_[Changes]1/ScoreDAOImpl.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/TestProject2/WEB-INF/classes/service/impl/UserServiceImpl.class" />
+    <option name="AFTER_PATH" value="target/TestProject2/WEB-INF/classes/service/impl/UserServiceImpl.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2022_12_15_21_01_取消提交了变更_[Changes]1/UserServiceImpl.class" />
+  </binary>
+</changelist>

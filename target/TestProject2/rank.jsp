@@ -8,8 +8,8 @@
     if (request.getAttribute("ranks")!=null) {
         ranks = (List<Rank>)request.getAttribute("ranks");
         ranksLen=ranks.size();
-        System.out.println("first account:"+ranks.get(0).account);
-        System.out.println("size:"+ranks.size());
+//        System.out.println("first account:"+ranks.get(0).account);
+//        System.out.println("size:"+ranks.size());
     }
     int k = 0;%>
 

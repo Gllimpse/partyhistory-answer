@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TestProject2:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a696c577-9694-4fc9-b330-3618fa924c13" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/rank.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/rank.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/AnswerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/AnswerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/IsAnswerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/IsAnswerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/RankServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/RankServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/RegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/StartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/StartServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/QuestionDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/QuestionDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/ScoreDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/ScoreDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/impl/QuestionDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/impl/QuestionDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/impl/ScoreDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/impl/ScoreDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/impl/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/impl/UserDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/Rank.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/Rank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/Score.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/factory/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/factory/DaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/factory/ServiceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/factory/ServiceFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/ScoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/ScoreService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/impl/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/impl/QuestionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/impl/ScoreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/impl/ScoreServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/util/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/util/DBHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2/rank.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/rank.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/AnswerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/AnswerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/IsAnswerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/IsAnswerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/RankServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/RankServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/RegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/StartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/StartServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/QuestionDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/QuestionDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/ScoreDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/ScoreDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/QuestionDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/impl/QuestionDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/ScoreDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/impl/ScoreDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/impl/UserDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Rank.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Rank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Score.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/factory/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/factory/DaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/ScoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ScoreService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/impl/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/impl/QuestionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/impl/ScoreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/impl/ScoreServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/DBHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/impl/QuestionDAOImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dao/impl/QuestionDAOImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/impl/ScoreDAOImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dao/impl/ScoreDAOImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/impl/UserDAOImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dao/impl/UserDAOImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/impl/UserServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/service/impl/UserServiceImplTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="JUnit3 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev-xzh" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2It8PSgJGwEAEiVi4GEVVguTaYX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/java/partyhistory-answer",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\partyhistory-answer\src\main\webapp" />
+      <recent name="D:\java\partyhistory-answer\src\main\webapp\img" />
+      <recent name="D:\java\partyhistory-answer\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\partyhistory-answer\src\main\webapp\js" />
+      <recent name="D:\java\partyhistory-answer\src\main\webapp\css" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="service.impl" />
+      <recent name="dao.daoimp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="daoimp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat 服务器.Tomcat 8.5.69">
+    <configuration name="ScoreDAOImpTest.testGetScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestProject2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao.daoimp" />
+      <option name="MAIN_CLASS_NAME" value="dao.impl.ScoreDAOImpTest" />
+      <option name="METHOD_NAME" value="testGetScore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreDAOImpTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestProject2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao.daoimp" />
+      <option name="MAIN_CLASS_NAME" value="dao.impl.ScoreDAOImpTest" />
+      <option name="METHOD_NAME" value="testSave" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreServiceImplTest.testIsBeforeToday" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestProject2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service.impl" />
+      <option name="MAIN_CLASS_NAME" value="service.impl.ScoreServiceImplTest" />
+      <option name="METHOD_NAME" value="testIsBeforeToday" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDAOImpTest.testGetUserByAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestProject2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao.daoimp" />
+      <option name="MAIN_CLASS_NAME" value="dao.impl.UserDAOImpTest" />
+      <option name="METHOD_NAME" value="testGetUserByAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDAOImpTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestProject2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao.daoimp" />
+      <option name="MAIN_CLASS_NAME" value="dao.impl.UserDAOImpTest" />
+      <option name="METHOD_NAME" value="testSave" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.69" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.69" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="TestProject2:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/TestProject2_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="0e95bbd3-3042-4709-8ade-02782721b1ce" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53167" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="TestProject2:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ScoreDAOImpTest.testGetScore" />
+      <item itemvalue="JUnit.ScoreDAOImpTest.testSave" />
+      <item itemvalue="JUnit.ScoreServiceImplTest.testIsBeforeToday" />
+      <item itemvalue="JUnit.UserDAOImpTest.testGetUserByAccount" />
+      <item itemvalue="JUnit.UserDAOImpTest.testSave" />
+      <item itemvalue="Tomcat 服务器.Tomcat 8.5.69" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserDAOImpTest.testSave" />
+        <item itemvalue="JUnit.UserDAOImpTest.testGetUserByAccount" />
+        <item itemvalue="JUnit.ScoreServiceImplTest.testIsBeforeToday" />
+        <item itemvalue="JUnit.ScoreDAOImpTest.testSave" />
+        <item itemvalue="JUnit.ScoreDAOImpTest.testGetScore" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a696c577-9694-4fc9-b330-3618fa924c13" name="Changes" comment="" />
+      <created>1670989501059</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670989501059</updated>
+      <workItem from="1670989504786" duration="2453000" />
+      <workItem from="1671002627462" duration="4703000" />
+      <workItem from="1671007391109" duration="9812000" />
+      <workItem from="1671068506746" duration="7565000" />
+      <workItem from="1671076169017" duration="18353000" />
+      <workItem from="1671107805044" duration="1001000" />
+      <workItem from="1671108826958" duration="403000" />
+      <workItem from="1671109242813" duration="300000" />
+      <workItem from="1671109757085" duration="1706000" />
+      <workItem from="1671111507255" duration="14722000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
