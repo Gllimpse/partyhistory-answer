@@ -29,16 +29,15 @@ public class LoginServlet extends HttpServlet {
         String  password = req.getParameter("password");
         System.out.println(account+" "+password);
 
+        RequestDispatcher rd = getServletConfig().getServletContext().getRequestDispatcher("/index.jsp");
         if(account.equals("") || password.equals("")){
             req.setAttribute("errInfo", "用户名或密码不能为空");
-            RequestDispatcher rd = getServletConfig().getServletContext().getRequestDispatcher("/index.jsp");
             rd.forward(req, resp);
         }
 
         String info=ServiceFactory.getUserService().Login(account,password);
         if(info.charAt(0) == '#'){
             req.setAttribute("errInfo", info);
-            RequestDispatcher rd = getServletConfig().getServletContext().getRequestDispatcher("/index.jsp");
             rd.forward(req, resp);
         }
 
@@ -46,6 +45,6 @@ public class LoginServlet extends HttpServlet {
         Cookie cookie = new Cookie("user",info);
         cookie.setMaxAge(60*60*24);
         resp.addCookie(cookie);
-        resp.sendRedirect("/index.jsp");
+        resp.sendRedirect("isAnswer?user=" + info);
     }
 }

@@ -79,7 +79,7 @@ public class ScoreDAOImpl implements ScoreDAO {
     }
 
     public List<Score> getScores(){
-        String sql = "select * from scores order by score desc limit 10";
+        String sql = "select * from scores order by score desc limit 3";
         PreparedStatement ps = null;
         List<Score> scores = new ArrayList<>();
         try {

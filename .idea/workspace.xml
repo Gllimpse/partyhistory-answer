@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="TestProject2:war exploded" />
+      <artifact name="TestProject2:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,61 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a696c577-9694-4fc9-b330-3618fa924c13" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/ScoreDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/ScoreDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/rank.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/rank.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/AnswerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/AnswerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/IsAnswerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/IsAnswerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestProject2.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/RankServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/RankServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/RegisterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/StartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/controller/StartServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/QuestionDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/QuestionDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/ScoreDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/ScoreDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/impl/QuestionDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/impl/QuestionDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/impl/ScoreDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/impl/ScoreDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/impl/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/dao/impl/UserDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/Rank.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/Rank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/Score.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/factory/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/factory/DaoFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/factory/ServiceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/factory/ServiceFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/QuestionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/ScoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/ScoreService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/impl/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/impl/QuestionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/impl/ScoreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/impl/ScoreServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/util/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/WEB-INF/classes/util/DBHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/TestProject2/rank.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestProject2/rank.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/AnswerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/AnswerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/IsAnswerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/IsAnswerServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/RankServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/RankServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/RegisterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/StartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/StartServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/QuestionDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/QuestionDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/ScoreDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/ScoreDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/QuestionDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/impl/QuestionDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/ScoreDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/impl/ScoreDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/impl/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/impl/UserDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Rank.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Rank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Score.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/factory/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/factory/DaoFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/QuestionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/ScoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ScoreService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/impl/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/impl/QuestionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/impl/ScoreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/impl/ScoreServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/DBHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/impl/QuestionDAOImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dao/impl/QuestionDAOImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/impl/ScoreDAOImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dao/impl/ScoreDAOImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/impl/UserDAOImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dao/impl/UserDAOImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/service/impl/UserServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/service/impl/UserServiceImplTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +82,7 @@
     "jdk.selected.JAVA_MODULE": "1.8",
     "last_opened_file_path": "D:/java/partyhistory-answer",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "项目",
+    "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.uml"
@@ -238,11 +196,11 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.69" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.69" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="TestProject2:war exploded">
+        <artifact name="TestProject2:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/TestProject2_war_exploded" />
+            <option name="CONTEXT_PATH" value="/TestProject2_war" />
           </settings>
         </artifact>
       </deployment>
@@ -320,7 +278,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="TestProject2:war exploded" />
+          <artifact name="TestProject2:war" />
         </option>
       </method>
     </configuration>
@@ -359,7 +317,7 @@
       <workItem from="1671108826958" duration="403000" />
       <workItem from="1671109242813" duration="300000" />
       <workItem from="1671109757085" duration="1706000" />
-      <workItem from="1671111507255" duration="14722000" />
+      <workItem from="1671111507255" duration="18146000" />
     </task>
     <servers />
   </component>
@@ -377,7 +335,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
